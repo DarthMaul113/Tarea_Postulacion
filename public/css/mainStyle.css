@@ -1,0 +1,168 @@
+/* General */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #495057 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-link {
+  color: white;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #adb5bd;
+}
+
+.navbar .nav-link.active {
+  font-weight: 900;
+  color: #cdcdcd;
+}
+
+/* Título */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Botón de sincronización */
+#sync-button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#sync-button:hover {
+  background-color: #5a6268;
+  cursor: pointer;
+}
+
+/* Tabla */
+.table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#tabla-uf_wrapper {
+  padding-bottom: 4rem;
+}
+
+/* Botones de acción */
+
+.btn-sm i {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.btn-sm:hover {
+  background-color: #5a6268;
+  cursor: pointer;
+}
+
+.page-link {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.page-link:hover {
+  background-color: #5a6268;
+  color: white;
+  cursor: pointer;
+}
+
+.page-link.current {
+  background-color: #323436;
+  color: white;
+  font-weight: bold;
+}
+
+.page-link:focus {
+  outline: none;
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: #323436;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
